@@ -24,13 +24,14 @@ Partial Class Register
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(509, 246)
+        Me.Label1.Location = New System.Drawing.Point(442, 273)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(459, 86)
         Me.Label1.TabIndex = 3
@@ -43,12 +44,23 @@ Partial Class Register
         Me.Panel1.Size = New System.Drawing.Size(326, 644)
         Me.Panel1.TabIndex = 2
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.Location = New System.Drawing.Point(347, 113)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(712, 86)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "STUDENT REGITRATION"
+        '
         'Register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Yellow
         Me.ClientSize = New System.Drawing.Size(1095, 663)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Register"
@@ -60,4 +72,5 @@ Partial Class Register
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label2 As Label
 End Class
